@@ -1,0 +1,104 @@
+h1 {
+  text-align: center;
+}
+
+header {
+  display: grid;
+  background-color: lightgreen;
+  padding: 60px;
+  height: 10px;
+  width: 1300px;
+  grid-area: header;
+}
+
+nav {
+  display: grid;
+  background-color: pink;
+  padding: 30px;
+  text-align: center;
+  height: 5px;
+  width: 1360px;
+  grid-area: nav;
+}
+
+aside {
+    display: grid;
+    background-color: gray;
+    padding: 10px;
+    height: 400px;
+    width: 700px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-area: aside;
+}
+
+welcome {
+    display: grid;
+    background-color: peachpuff;
+    padding: 10px;
+    height: 400px;
+    width: 680px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-area: welcome;
+}
+
+work {
+    display: grid;
+    background-color: green;
+    padding: 10px;
+    height: 300px;
+    width:460px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-area: work;
+}
+
+resume {
+    display: grid;
+    background-color: darkviolet;
+    padding: 10px;
+    height: 300px;
+    width:460px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-area: resume;
+}
+
+preview {
+    display: grid;
+    background-color: darkkhaki;
+    padding:10px;
+    height: 300px;
+    width:440px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-area: preview;
+}
+
+footer {
+  display: grid;
+  background-color: teal;
+  padding: 40px;
+  text-align: center;
+  height: 20px;
+  width: 1340px;
+  grid-area: footer;
+}
+
+.gridwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(100px, -100);
+    grid-template-areas:
+        "header header header header header header"
+        "nav nav nav nav nav nav"
+        "aside aside aside welcome welcome welcome"
+        "work work resume resume preview preview"
+        "footer footer footer footer footer footer";
+}

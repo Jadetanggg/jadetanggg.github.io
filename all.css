@@ -1,0 +1,521 @@
+body {
+  font-family: cowboy;
+  background-image: url("https://people.umass.edu/jntang/images/paperbackground.jpg");
+  background-color: #F8FFF7;
+}
+
+homep {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+p {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 15px;
+}
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+h2 {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+h3 {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+h4 {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 10px;
+}
+
+img {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+header {
+ display: grid;
+ background-color: #00A36C;
+ height: 130px;
+ width: 1420px;
+ text-align: center;
+ justify-content: center;
+ align-content: center;
+ padding-top: 10px;
+ grid-area: header;
+}
+
+nav {
+ display: grid;
+ background-color: white;
+ text-align: center;
+ height: 70px;
+ width: 1420px;
+ grid-area: nav;
+}
+
+.aboutme {
+ list-style-type: none;
+ display: inline;
+ padding: 15px;
+ text-align: center;
+ font-size: 10pt;
+ background-color: lightgray;
+ border-radius: 50%;
+ border: 1px solid black;
+}
+
+.resume {
+ list-style-type: none;
+ display: inline;
+ padding: 15px;
+ text-align: center;
+ font-size: 10pt;
+ background-color: lightgray;
+ border-radius: 50%;
+ border: 1px solid black;
+}
+
+.portfolio {
+ list-style-type: none;
+ display: inline;
+ padding: 15px;
+ text-align: center;
+ font-size: 10pt;
+ background-color: lightgray;
+ border-radius: 50%;
+ border: 1px solid black;
+}
+
+.experience {
+ list-style-type: none;
+ display: inline;
+ padding: 15px;
+ text-align: center;
+ font-size: 10pt;
+ background-color: lightgray;
+ border-radius: 50%;
+ border: 1px solid black;
+}
+
+navli {
+ background-color: lightgray;
+}
+
+navli:hover {
+ background-color: lightyellow;
+}
+
+asidepic {
+   display: grid;
+   background-image: url("https://people.umass.edu/jntang/images/paperbackground.jpg");
+   background-color: gray;
+   height: 400px;
+   width: 710px;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   grid-area: asidepic;
+}
+
+intro {
+   display: grid;
+   background-color: lightyellow;
+   height: 400px;
+   width: 708px;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   grid-area: intro;
+}
+
+work {
+   display: grid;
+   background-color: green;
+   height: 300px;
+   width: 471px;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   padding-top: 15px;
+   grid-area: work;
+}
+
+res {
+   display: grid;
+   background-color: darkviolet;
+   height: 300px;
+   width: 471px;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   padding-top: 15px;
+   grid-area: res;
+}
+
+preview {
+   display: grid;
+   background-color: darkkhaki;
+   height: 300px;
+   width: 471px;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   padding-top: 15px;
+   grid-area: preview;
+}
+
+.gridwrapperhome {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: minmax(100px, auto);
+   grid-template-areas:
+       "header header header header header header"
+       "nav nav nav nav nav nav"
+       "asidepic asidepic asidepic intro intro intro"
+       "work work res res preview preview"
+       "footer footer footer footer footer footer";
+}
+
+.gridwrapperaboutme {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas:
+        "header header header header header header"
+        "nav nav nav nav nav nav"
+        "aside welcome welcome welcome welcome welcome"
+        "footer footer footer footer footer footer";
+}
+
+welcome {
+    display: grid;
+    background-color: lightyellow;
+    height: 1400px;
+    width: 1120px;
+    grid-area: welcome;
+}
+
+aside {
+    display: grid;
+    background-image: url("https://people.umass.edu/jntang/images/paperbackground.jpg");
+    background-color: gray;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-area: aside;
+ }
+
+ figure {
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+ }
+
+
+.movies {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    justify-content: center;
+    align-content: center;
+ }
+
+ .music {
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+   justify-content: center;
+   align-content: center;
+ }
+
+ .gridwrapperresume {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: minmax(100px, auto);
+     grid-template-areas:
+         "header header header"
+         "nav nav nav"
+         "pdf pdf pdf"
+         "resume resume resume"
+         "footer footer footer";
+  }
+
+  pdf {
+    display: grid;
+    height: 350px;
+    width: 1420px;
+    align-content: center;
+    justify-content: center;
+    grid-area: pdf;
+  }
+
+  resume {
+      display: grid;
+      height: 1700px;
+      width: 1420px;
+      margin-top: 15px;
+      align-content: center;
+      justify-content: center;
+      background-color: lightyellow;
+      grid-area: resume;
+  }
+
+.umassadmin {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  justify-content: center;
+  align-content: center;
+}
+
+.qcadmin {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  justify-content: center;
+  align-content: center;
+}
+
+.caregiver {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  justify-content: center;
+  align-content: center;
+}
+
+.ymca {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  justify-content: center;
+  align-content: center;
+}
+
+.zen {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  justify-content: center;
+  align-content: center;
+}
+
+ul {
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.gridwrapperportfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "techfolder techfolder creativefolder creativefolder"
+        "footer footer footer footer";
+ }
+
+ techfolder {
+     display: grid;
+     height: 500px;
+     width: 708px;
+     align-content: center;
+     justify-content: center;
+     background-color: white;
+     grid-area: techfolder;
+ }
+
+creativefolder {
+     display: grid;
+     height: 500px;
+     width: 708px;
+     align-content: center;
+     justify-content: center;
+     background-color: white;
+     grid-area: creativefolder;
+ }
+
+ .gridwrapperexperience {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: minmax(100px, auto);
+     grid-template-areas:
+         "header header header"
+         "nav nav nav"
+         "mcphs qc umass"
+         "footer footer footer";
+  }
+
+  umass {
+      display: grid;
+      height: 1000px;
+      width: 471px;
+      align-content: center;
+      justify-content: center;
+      background-color: #FFFF8F;
+      grid-area: umass;
+  }
+
+  mcphs {
+    display: grid;
+    height: 1000px;
+    width: 470px;
+    align-content: center;
+    justify-content: center;
+    background-color: #fcffa4;
+    grid-area: mcphs;
+  }
+
+  qc {
+    display: grid;
+    height: 1000px;
+    width: 470px;
+    align-content: center;
+    justify-content: center;
+    background-color: #FFFAA0;
+    grid-area: qc;
+  }
+
+  .gridwrappertechwork {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: minmax(100px, auto);
+      grid-template-areas:
+          "header header header"
+          "nav nav nav"
+          "techwork techwork techwork"
+          "footer footer footer";
+   }
+
+   techwork {
+       display: grid;
+       height: 600px;
+       width: 1420px;
+       align-content: center;
+       justify-content: center;
+       background-color: lightyellow;
+       padding-bottom: 10px;
+       grid-area: techwork;
+   }
+
+   portfoliop {
+       border-style: dashed;
+       width: 900px;
+       padding-top: 20px;
+       border-width: 1px;
+       border-color: lightgray;
+       background-color: white;
+       text-align: center;
+       align-content: center;
+       justify-content: center;
+   }
+
+   a {
+     text-decoration: none;
+     font-size: 20px;
+     color: darkblue;
+    }
+
+   a.button:link {
+       color: #006400;
+       border: 1px solid #03c03c;
+       background-color: #fff3fc;
+       padding: 10px;
+       position: sticky;
+       border-radius: 10px;
+       text-decoration: none;
+   }
+   a.button:active {
+       color: #98fb98;
+   }
+   a.button:visited {
+       color: #228b22;
+       border: 1px solid #ace1af;
+       background-color: #e0eced;
+   }
+   a.button:hover {
+       color: #8fbc8f;
+       border: 1px solid darkcyan;
+       background-color: #e0eced;
+   }
+
+   techh1 {
+       color: black;
+       font-family: Helvetica, bold;
+       font-size: 40px;
+       padding-bottom: 10px;
+       text-transform: uppercase;
+       text-align: center;
+  }
+
+  .gridwrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: minmax(100px, auto);
+      grid-template-areas:
+          "header header header"
+          "nav nav nav"
+          "creativework creativework creativework"
+          "footer footer footer";
+   }
+
+   creativeh1 {
+       color: black;
+       font-family: 'Shadows Into Light', cursive;
+       font-size: 40px;
+       padding-bottom: 10px;
+       text-transform: uppercase;
+       text-align: center;
+  }
+
+  creativework {
+      display: grid;
+      height: 550px;
+      width: 1420px;
+      padding-bottom: 15px;
+      align-content: center;
+      justify-content: center;
+      background-color: lightyellow;
+      grid-area: creativework;
+   }
+
+footer {
+  display: flex;
+  background-color: #00A36C;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 5px;
+  height: 100px;
+  width: 1420px;
+  grid-area: footer;
+}

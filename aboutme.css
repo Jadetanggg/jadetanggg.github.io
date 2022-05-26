@@ -1,0 +1,169 @@
+body {
+  background-image: url("https://people.umass.edu/jntang/images/paperbackground.jpg");
+}
+
+p {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+h2 {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+h3 {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+header {
+ display: grid;
+ background-color: #00A36C;
+ height: 130px;
+ width: 1420px;
+ text-align: center;
+ justify-content: center;
+ align-content: center;
+ padding-top: 10px;
+ grid-area: header;
+}
+
+nav {
+  display: grid;
+  background-color: white;
+  text-align: center;
+  height: 70px;
+  width: 1420px;
+  grid-area: nav;
+ }
+
+.aboutme {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+  text-align: center;
+  font-size: 10pt;
+  background-color: lightgray;
+  border-radius: 50%;
+  border: 1px solid black;
+ }
+
+.resume {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+  text-align: center;
+  font-size: 10pt;
+  background-color: lightgray;
+  border-radius: 50%;
+  border: 1px solid black;
+ }
+
+.portfolio {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+  text-align: center;
+  font-size: 10pt;
+  background-color: lightgray;
+  border-radius: 50%;
+  border: 1px solid black;
+ }
+
+.experience {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+  text-align: center;
+  font-size: 10pt;
+  background-color: lightgray;
+  border-radius: 50%;
+  border: 1px solid black;
+ }
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+ }
+
+.nav li:hover {
+   background-color: darkgray;
+ }
+
+aside {
+    display: grid;
+    background-image: url("https://people.umass.edu/jntang/images/paperbackground.jpg");
+    background-color: gray;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-area: aside;
+ }
+
+ figure {
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+ }
+
+ welcome {
+     display: grid;
+     background-color: lightyellow;
+     height: 1400px;
+     width: 1120px;
+     grid-area: welcome;
+ }
+
+.movies {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    justify-content: center;
+    align-content: center;
+ }
+
+ .music {
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+   justify-content: center;
+   align-content: center;
+ }
+
+ footer {
+  display: flex;
+  background-color: teal;
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  height: 60px;
+  width: 1420px;
+  grid-area: footer;
+ }
+
+ .gridwrapperaboutme {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: minmax(100px, -100);
+     grid-template-areas:
+         "header header header header header header"
+         "nav nav nav nav nav nav"
+         "aside welcome welcome welcome welcome welcome"
+         "footer footer footer footer footer footer";
+ }

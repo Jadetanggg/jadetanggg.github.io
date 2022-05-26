@@ -1,0 +1,154 @@
+p {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    color: black;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+body {
+    font-family: cowboy;
+    background-color: #F8FFF7;
+    background-image: url("https://people.umass.edu/jntang/images/paperbackground.jpg"); }
+
+h2 {
+    color: black;
+    text-align: center; }
+
+h3 {
+    text-align: center;
+}
+
+ header {
+  display: grid;
+  background-color: #00A36C;
+  height: 130px;
+  width: 1420px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 10px;
+  grid-area: header;
+ }
+
+nav {
+  display: grid;
+  background-color: white;
+  text-align: center;
+  height: 70px;
+  width: 1420px;
+  grid-area: nav;
+ }
+
+.aboutme {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+  text-align: center;
+  font-size: 10pt;
+  background-color: lightgray;
+  border-radius: 50%;
+  border: 1px solid black;
+ }
+
+.resume {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+  text-align: center;
+  font-size: 10pt;
+  background-color: lightgray;
+  border-radius: 50%;
+  border: 1px solid black;
+ }
+
+.portfolio {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+  text-align: center;
+  font-size: 10pt;
+  background-color: lightgray;
+  border-radius: 50%;
+  border: 1px solid black;
+ }
+
+.experience {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+  text-align: center;
+  font-size: 10pt;
+  background-color: lightgray;
+  border-radius: 50%;
+  border: 1px solid black;
+ }
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+ }
+
+.nav li:hover {
+   background-color: darkgray;
+ }
+
+ umass {
+     display: grid;
+     height: 1100px;
+     width: 473px;
+     align-content: center;
+     justify-content: center;
+     background-color: #FFFF8F;
+     grid-area: umass;
+ }
+
+ mcphs {
+   display: grid;
+   height: 1100px;
+   width: 473px;
+   align-content: center;
+   justify-content: center;
+   background-color: #FFFDD0;
+   grid-area: mcphs;
+ }
+
+ qc {
+   display: grid;
+   height: 1100px;
+   width: 473px;
+   align-content: center;
+   justify-content: center;
+   background-color: #FFFAA0;
+   grid-area: qc;
+ }
+
+ footer {
+   display: flex;
+   background-color: teal;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   height: 70px;
+   padding-top: 15px;
+   width: 1420px;
+   grid-area: footer;
+ }
+
+ .gridwrapper {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: minmax(100px, -100);
+     grid-template-areas:
+         "header header header"
+         "nav nav nav"
+         "mcphs qc umass"
+         "footer footer footer";
+  }

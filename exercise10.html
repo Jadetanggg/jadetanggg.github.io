@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercise 10: CSS exploration</title>
+<style>
+#rcorners {
+  border-radius: 50%;
+  background: green;
+  border: 2px solid black;
+  padding: 20px;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: green;
+  transition: color;
+}
+
+div:hover {
+  background: lightgreen;
+}
+
+span {
+  border: 2px dashed black;
+  padding:  0em 1em;
+  background: lightpink;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 2;
+}
+
+span.ex1 {
+  -webkit-box-decoration-break: clone;
+  -o-boxs-decoration-break: clone;
+  box-decoration-break: clone;
+}
+</style>
+</head>
+<body>
+  <h1>The Border-radius Property</h1>
+  <p id="rcorners">Portfolio</p>
+
+<h1>The Transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+<div></div>
+
+<h1>The Box-decoration-break Property</h1>
+<span class="ex1">Home<br>About Me<br>Resume<br>Portfolio<br>Experience</span>
+
+</body>
+</html>

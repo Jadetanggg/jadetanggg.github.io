@@ -1,0 +1,44 @@
+﻿body {
+    font-family: 'Vesper Libre', serif;
+    background-color: #F5FEF7; }
+
+h1 {
+    color: black;
+    background-color: #77FF96;
+    padding: 15px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-family: 'Noto Serif Display', serif; }
+
+h2 {
+    color: #223928;
+    background-color: #C2FFD0;
+    padding: 25px;
+}
+
+h3 {
+    color: #323934;
+    background-color: #CBDBCF;
+    padding: 25px;
+}
+
+p {
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 1.2em;
+    font-family: 'Eczar', serif; }
+
+a:link {
+    color: #0F3B19;
+    text-decoration: none; }
+
+a:visited {
+    color: #3E5443;
+    text-decoration: underline dotted; }
+
+a:hover {
+    color: #203B26;
+    text-decoration: underline; }
+
+a:active {
+    color: #0C162F; }

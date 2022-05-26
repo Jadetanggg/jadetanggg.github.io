@@ -1,0 +1,36 @@
+﻿body {
+    font-family: Arial;
+    background-color: #F8FFF7; }
+
+h1 {
+    color: black;
+    background-color: #00A36C;
+    padding: 20px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-family: 'Abril Fatface', cursive; }
+
+h2 {
+    color: black;
+    background-color: #5FDF9D;
+    padding: 20px; }
+
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.6em;
+    font-family: "Courier New", Courier New, Courier, monospace, monospace; }
+
+a:link {
+    color: darkgreen;
+    text-decoration: none; }
+
+a:visited {
+    color: #397A48; }
+
+a:hover {
+    color: #144B21;
+    text-decoration: underline; }
+
+a:active {
+    color: darkblue; }
